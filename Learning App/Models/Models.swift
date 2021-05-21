@@ -15,7 +15,7 @@ struct Module: Identifiable, Decodable {
     var test: Test
 }
 
-struct Content:Identifiable, Decodable {
+struct Content: Identifiable, Decodable {
     
     var id: Int
     var image: String
@@ -24,7 +24,7 @@ struct Content:Identifiable, Decodable {
     var lessons: [Lesson]
 }
 
-struct Lesson:Identifiable, Decodable {
+struct Lesson: Identifiable, Decodable {
     
     var id: Int
     var title: String
@@ -42,7 +42,7 @@ struct Test: Identifiable, Decodable {
     var questions: [Question]
 }
 
-struct Question: Decodable, Identifiable {
+struct Question: Identifiable, Decodable {
     
     var id: Int
     var content: String
