@@ -34,43 +34,42 @@ struct HomeViewRow: View {
                 Spacer()
                 
                 // text
-                VStack (alignment: .leading, spacing: 10) {
+                VStack (alignment: .leading, spacing: 5) {
                     // headline
                     Text(title)
                         .bold()
                     
                     // description
                     Text(description)
-                        .font(Font.system(size: 12))
+                        .font(Font.system(size: 10))
                         .padding(.bottom, 20)
                     
                     // icons
-                    HStack {
+                    HStack (spacing: 4) {
                         // number of lessons/questions
                         Image(systemName: "text.book.closed")
                             .resizable()
-                            .frame(width: 15, height: 15)
+                            .frame(width: 12, height: 12)
                         Text(count)
-                            .font(.caption)
+                            .font(Font.system(size: 8))
                         // time
                         Image(systemName: "clock")
                             .resizable()
-                            .frame(width: 15, height: 15)
+                            .frame(width: 12, height: 12)
                         
                         Text(time)
-                            .font(.caption)
+                            .font(Font.system(size: 8))
                         
                     }
                     
                 }
-                .padding(.leading, 20)
+                .padding(.leading, 10)
                 
             }
             .padding(.horizontal, 20)
             
         }
         .padding()
-        
         
     }
 }
