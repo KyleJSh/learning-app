@@ -69,7 +69,7 @@ struct HomeViewRow: View {
             .padding(.horizontal, 20)
             
         }
-        .padding()
+        .padding(10)
         
     }
 }
