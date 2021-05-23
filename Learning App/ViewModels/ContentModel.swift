@@ -16,6 +16,10 @@ class ContentModel: ObservableObject {
     @Published var currentModule:Module?
     var currentModuleIndex = 0
     
+    // Current lesson
+    @Published var currentLesson:Lesson?
+    var currentLessonIndex = 0
+    
     init() {
         
         getLocalJson()
@@ -60,4 +64,40 @@ class ContentModel: ObservableObject {
         
     }
     
+    func beginLesson(_ lessonIndex: Int) {
+        
+        // Check it's within range of module lessons
+        if lessonIndex < currentModule!.content.lessons.count {
+            currentLessonIndex = lessonIndex
+        }
+        else {
+            currentLessonIndex = 0
+        }
+        
+        // Set the current lesson
+        currentLesson = currentModule!.content.lessons[currentLessonIndex]
+    }
+    
+    func nextLesson() {
+        
+        // Advance the lesson index
+        currentLessonIndex += 1
+        
+        // Check that it's within range
+        if currentLessonIndex < currentModule!.content.lessons.count {
+            
+            // Set current lesson property
+            currentLesson = currentModule!.content.lessons[currentLessonIndex]
+        }
+        else {
+            // reset the lesson state
+            currentLessonIndex = 0
+            currentLesson = nil
+        }
+    }
+    
+    func hasNextLesson() -> Bool {
+    
+        return (currentLessonIndex + 1 < currentModule!.content.lessons.count)
+    }
 }

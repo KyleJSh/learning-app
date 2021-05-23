@@ -17,6 +17,9 @@
 		C88846E52655DFE000FAA3D6 /* data.json in Resources */ = {isa = PBXBuildFile; fileRef = C88846E32655DFE000FAA3D6 /* data.json */; };
 		C88846E62655DFE000FAA3D6 /* style.html in Resources */ = {isa = PBXBuildFile; fileRef = C88846E42655DFE000FAA3D6 /* style.html */; };
 		C88846E92655E08200FAA3D6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88846E82655E08200FAA3D6 /* Models.swift */; };
+		C88D46802659E915000C3780 /* ContentDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D467F2659E915000C3780 /* ContentDetailView.swift */; };
+		C88D46842659EB05000C3780 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C88D46832659EB05000C3780 /* AVKit.framework */; };
+		C88D46872659EC8E000C3780 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C88D46862659EC8E000C3780 /* Constants.swift */; };
 		C8C5E17726581D120041FC43 /* HomeViewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C8C5E17626581D120041FC43 /* HomeViewRow.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +36,9 @@
 		C88846E32655DFE000FAA3D6 /* data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = data.json; sourceTree = "<group>"; };
 		C88846E42655DFE000FAA3D6 /* style.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = style.html; sourceTree = "<group>"; };
 		C88846E82655E08200FAA3D6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C88D467F2659E915000C3780 /* ContentDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentDetailView.swift; sourceTree = "<group>"; };
+		C88D46832659EB05000C3780 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = System/Library/Frameworks/AVKit.framework; sourceTree = SDKROOT; };
+		C88D46862659EC8E000C3780 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C8C5E17626581D120041FC43 /* HomeViewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -41,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C88D46842659EB05000C3780 /* AVKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +59,7 @@
 			children = (
 				C88846CD2655DF8100FAA3D6 /* Learning App */,
 				C88846CC2655DF8100FAA3D6 /* Products */,
+				C88D46822659EB04000C3780 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +102,7 @@
 				C8C5E17626581D120041FC43 /* HomeViewRow.swift */,
 				C87D5DA526598517005E0844 /* ContentView.swift */,
 				C87D5DA826598F6F005E0844 /* ContentViewRow.swift */,
+				C88D467F2659E915000C3780 /* ContentDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -126,8 +135,17 @@
 		C88846E22655DFAB00FAA3D6 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				C88D46862659EC8E000C3780 /* Constants.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		C88D46822659EB04000C3780 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C88D46832659EB05000C3780 /* AVKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,10 +222,12 @@
 				C88846D12655DF8100FAA3D6 /* HomeView.swift in Sources */,
 				C8C5E17726581D120041FC43 /* HomeViewRow.swift in Sources */,
 				C87D5DA626598517005E0844 /* ContentView.swift in Sources */,
+				C88D46802659E915000C3780 /* ContentDetailView.swift in Sources */,
 				C88846CF2655DF8100FAA3D6 /* Learning_AppApp.swift in Sources */,
 				C87D5DA926598F6F005E0844 /* ContentViewRow.swift in Sources */,
 				C82B08422657081F008EE391 /* ContentModel.swift in Sources */,
 				C88846E92655E08200FAA3D6 /* Models.swift in Sources */,
+				C88D46872659EC8E000C3780 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
